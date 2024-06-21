@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PatternD {
+public class Pattern4 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the Number: ");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PatternO {
+public class Pattern15 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the Number: ");
