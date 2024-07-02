@@ -3,18 +3,17 @@ import java.util.Scanner;
 public class PerfectNumber {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
-        int sum=0;
-        int num = in.nextInt();
-        for(int i=0; i<=num; i++){
-            sum= sum +i;
-            if(sum == num){
-                System.out.println(sum +" is a Perfect Number");
-                break;
+        int sum  =0;
+        int n = in.nextInt();
+        for(int i=1;i<n;i++){
+            if(n%i==0){
+                sum += i;
             }
         }
-        if(sum!=num){
-            System.out.print(num +" is not a Perfect Number");
+        if(sum ==n){
+            System.out.println("Perfect  number");
+        }else{
+            System.out.println("Not Perfect number");
         }
     }
 }
