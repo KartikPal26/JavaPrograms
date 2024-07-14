@@ -1,9 +1,10 @@
-public class BinarySearch {
+public class Floor {
     public static void main(String[] args) {
-        int[] arr = {7,6,5,4,3,2,1};
-        System.out.println(binaryLinear(arr, 5));
+        int[] arr = {7,6,4,3,2,1};
+        System.out.println(floor(arr, 5));
     }
-    static int binaryLinear(int[] arr, int target){
+    // return the index: Greatest number <= target
+    static int floor(int[] arr, int target){
         int s=0;
         int e=arr.length-1;
         if(arr[s]<arr[e]){
@@ -14,7 +15,7 @@ public class BinarySearch {
                 }else if(arr[m]<target){
                     s=m+1;
                 }else{
-                    return m;
+                    return m+1;
                 }
             }
         }
@@ -30,6 +31,6 @@ public class BinarySearch {
                 }
             }
         }
-        return -1;
+        return e;
     }
 }
